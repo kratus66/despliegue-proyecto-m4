@@ -18,18 +18,13 @@ const nextConfig = {
         hostname: 'w7.pngwing.com',
         pathname: '/**',
       },
-      {
-        protocol: 'http',
-        hostname: 'localhost',
-        port: '3001',
-        pathname: '/images/**',
-      },
+     
 
     ],
   },
   // Configuración de variables de entorno
   env: {
-    API_URL: process.env.API_URL || 'http://localhost:3001',  // Define una URL predeterminada si no está configurada
+    API_URL: process.env.API_URL ,  // Define una URL predeterminada si no está configurada
   },
 };
 
