@@ -39,7 +39,7 @@ const CartSummary = ({ products = [], onPurchaseConfirm }) => {
   
       if (!response.ok) {
         const errorData = await response.json();
-        console.error('Error de confirmación:', errorData);
+        console.error('Error de confirmación: ', errorData);
         throw new Error(`Error al confirmar el pedido: ${errorData.message || 'Error desconocido'}`);
       }
   
